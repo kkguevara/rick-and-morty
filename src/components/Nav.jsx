@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 const Nav = ({ onsearch }) => {
     return (
         <nav>
+            
             <SearchBar onSearch={onsearch} />
+
             <button>
                <Link to= '/about' >ABOUT</Link> 
             </button>
@@ -13,6 +15,12 @@ const Nav = ({ onsearch }) => {
                <Link to= '/home' >HOME</Link> 
             </button>
            
+            <button>
+               <Link to= '/favorites' >Favorites</Link> 
+            </button>
+
+
+
         </nav>
     );
  }
